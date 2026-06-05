@@ -4,11 +4,11 @@ This example demonstrates the use of the SPI Serial Communication Block (SCB) re
 
 [View this README on GitHub.](https://github.com/Infineon/mtb-example-ce240722-spi-master-dma)
 
-[Provide feedback on this code example.](https://cypress.co1.qualtrics.com/jfe/form/SV_1NTns53sK2yiljn?Q_EED=eyJVbmlxdWUgRG9jIElkIjoiQ0UyNDA3MjIiLCJTcGVjIE51bWJlciI6IjAwMi00MDcyMiIsIkRvYyBUaXRsZSI6IlBTb0MmdHJhZGU7IENvbnRyb2wgTUNVOiBTQ0IgU1BJIG1hc3RlciB3aXRoIERNQSIsInJpZCI6InN1YnJhbWFuaXlhcCIsIkRvYyB2ZXJzaW9uIjoiMS4wLjAiLCJEb2MgTGFuZ3VhZ2UiOiJFbmdsaXNoIiwiRG9jIERpdmlzaW9uIjoiTUNEIiwiRG9jIEJVIjoiSUNXIiwiRG9jIEZhbWlseSI6IlBTT0MifQ==)
+[Provide feedback on this code example.](https://yourvoice.infineon.com/jfe/form/SV_1NTns53sK2yiljn?Q_EED=eyJVbmlxdWUgRG9jIElkIjoiQ0UyNDA3MjIiLCJTcGVjIE51bWJlciI6IjAwMi00MDcyMiIsIkRvYyBUaXRsZSI6IlBTb0MmdHJhZGU7IENvbnRyb2wgTUNVOiBTQ0IgU1BJIG1hc3RlciB3aXRoIERNQSIsInJpZCI6ImJhbGFjaGFuZGVyLnN1YnJhbWFuaXlhcGlsbGFpa2FubmFuQGluZmluZW9uLmNvbSIsIkRvYyB2ZXJzaW9uIjoiMS4xLjAiLCJEb2MgTGFuZ3VhZ2UiOiJFbmdsaXNoIiwiRG9jIERpdmlzaW9uIjoiTUNEIiwiRG9jIEJVIjoiSUNXIiwiRG9jIEZhbWlseSI6IlBTT0MifQ==)
 
 ## Requirements
 
-- [ModusToolbox&trade;](https://www.infineon.com/modustoolbox) v3.3 or later (tested with v3.3)
+- [ModusToolbox&trade;](https://www.infineon.com/modustoolbox) v3.7 or later
 - Board support package (BSP) minimum required version for:
    - KIT_PSC3M5_EVK: 1.0.3
    - KIT_PSC3M5_CC1: 1.0.3
@@ -18,13 +18,15 @@ This example demonstrates the use of the SPI Serial Communication Block (SCB) re
 
 ## Supported toolchains (make variable 'TOOLCHAIN')
 
-- GNU Arm&reg; Embedded Compiler v11.3.1 (`GCC_ARM`) – Default value of `TOOLCHAIN`
+- GNU Arm&reg; Embedded Compiler v14.2.1 (`GCC_ARM`) – Default value of `TOOLCHAIN`
 - Arm&reg; Compiler v6.22 (`ARM`)
 - IAR C/C++ Compiler v9.50.2 (`IAR`)
 
 ## Supported kits (make variable 'TARGET')
 
 - [PSOC&trade; Control C3 Evaluation Kit](https://www.infineon.com/KIT_PSC3M5_EVK) (`KIT_PSC3M5_EVK`) – Default value of `TARGET`
+- [KIT_PSC3M5_CC2 Motor Control Card](https://www.infineon.com/evaluation-board/KIT-PSC3M5-CC2) (`KIT_PSC3M5_CC2`)
+- [KIT_PSC3M5_CC2 Motor Control Card](https://www.infineon.com/evaluation-board/KIT-PSC3M5-CC1) (`KIT_PSC3M5_CC1`)
 
 ## Hardware setup
 
@@ -314,6 +316,7 @@ Document title: *CE240722* - *SCB SPI master with DMA*
  Version | Description of change
  ------- | ---------------------
  1.0.0   | New code example 
+ 1.1.0   | Added support for KIT_PSC3M5_CC2 and KIT_PSC3M5_CC1
  
 
 <br />
