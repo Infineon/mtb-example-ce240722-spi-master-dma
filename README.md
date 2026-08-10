@@ -5,7 +5,7 @@ This example demonstrates the use of the SPI Serial Communication Block (SCB) re
 
 [View this README on GitHub.](https://github.com/Infineon/mtb-example-ce240722-spi-master-dma)
 
-[Provide feedback on this code example.](https://yourvoice.infineon.com/jfe/form/SV_1NTns53sK2yiljn?Q_EED=eyJVbmlxdWUgRG9jIElkIjoiQ0UyNDA3MjIiLCJTcGVjIE51bWJlciI6IjAwMi00MDcyMiIsIkRvYyBUaXRsZSI6IlBTT0MmdHJhZGU7IENvbnRyb2wgQzMgTUNVOiBTQ0IgU1BJIG1hc3RlciB3aXRoIERNQSIsInJpZCI6ImJhbGFjaGFuZGVyLnN1YnJhbWFuaXlhcGlsbGFpa2FubmFuQGluZmluZW9uLmNvbSIsIkRvYyB2ZXJzaW9uIjoiMS4yLjAiLCJEb2MgTGFuZ3VhZ2UiOiJFbmdsaXNoIiwiRG9jIERpdmlzaW9uIjoiTUNEIiwiRG9jIEJVIjoiSUNXIiwiRG9jIEZhbWlseSI6IlBTT0MifQ==)
+[Provide feedback on this code example.](https://yourvoice.infineon.com/jfe/form/SV_1NTns53sK2yiljn?Q_EED=eyJVbmlxdWUgRG9jIElkIjoiQ0UyNDA3MjIiLCJTcGVjIE51bWJlciI6IjAwMi00MDcyMiIsIkRvYyBUaXRsZSI6IlBTT0MmdHJhZGU7IENvbnRyb2wgQzMgTUNVOiBTQ0IgU1BJIG1hc3RlciB3aXRoIERNQSIsInJpZCI6ImJhbGFjaGFuZGVyLnN1YnJhbWFuaXlhcGlsbGFpa2FubmFuQGluZmluZW9uLmNvbSIsIkRvYyB2ZXJzaW9uIjoiMS4yLjEiLCJEb2MgTGFuZ3VhZ2UiOiJFbmdsaXNoIiwiRG9jIERpdmlzaW9uIjoiTUNEIiwiRG9jIEJVIjoiSUNXIiwiRG9jIEZhbWlseSI6IlBTT0MifQ==)
 
 
 ## Requirements
@@ -281,6 +281,8 @@ Document title: *CE240722* - *PSOC&trade; Control C3 MCU: SCB SPI master with DM
  1.0.0   | New code example 
  1.1.0   | Added support for KIT_PSC3M5_CC2 and KIT_PSC3M5_CC1
  1.2.0   | Added KIT_PSC3M6_EVAL support
+ 1.2.1   | Readme update
+
 <br>
 
 
