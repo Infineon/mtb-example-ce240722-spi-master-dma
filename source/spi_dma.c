@@ -102,12 +102,8 @@ uint32_t configure_tx_dma(uint32_t* tx_buffer)
      Cy_DMA_Descriptor_SetSrcAddress(&txDma_Descriptor_0, (uint8_t *)tx_buffer);
      Cy_DMA_Descriptor_SetDstAddress(&txDma_Descriptor_0, (void *)&mSPI_HW->TX_FIFO_WR);
 
-     /* Initialize and enable the interrupt from TxDma */
-     #if defined(CY_DEVICE_PSC3)
      Cy_SysInt_Init(&intTxDma_cfg,&tx_dma_complete);
-     #else
-     cyhal_system_set_isr(txDma_IRQ, txDma_IRQ, TXDMA_INTERRUPT_PRIORITY, &tx_dma_complete);
-     #endif
+
      NVIC_EnableIRQ((IRQn_Type)intTxDma_cfg.intrSrc);
 
       /* Enable DMA interrupt source. */
@@ -184,12 +180,9 @@ uint32_t configure_rx_dma(uint32_t* rx_buffer)
      Cy_DMA_Descriptor_SetSrcAddress(&rxDma_Descriptor_0, (void *)&sSPI_HW->RX_FIFO_RD);
      Cy_DMA_Descriptor_SetDstAddress(&rxDma_Descriptor_0, (uint8_t *)rx_buffer);
 
-      /* Initialize and enable the interrupt from TxDma */
-     #if defined(CY_DEVICE_PSC3)
+
      Cy_SysInt_Init(&intRxDma_cfg,&rx_dma_complete);
-     #else
-     cyhal_system_set_isr(rxDma_IRQ, rxDma_IRQ, RXDMA_INTERRUPT_PRIORITY, &rx_dma_complete);
-     #endif
+ 
      NVIC_EnableIRQ((IRQn_Type)intRxDma_cfg.intrSrc);
 
       /* Enable DMA interrupt source. */

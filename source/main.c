@@ -50,11 +50,9 @@
 #include "spi_slave.h"
 #include "cybsp_types.h"
 
-#if !defined(CY_DEVICE_PSC3)
-#include "cyhal.h"
-#include "cyhal_gpio_impl.h"
+
 #include "cycfg.h"
-#endif
+
 
 /******************************************************************************
  * Macro definitions                                                          *
@@ -237,21 +235,14 @@ void update_led(uint32_t led_cmd)
        connection. */
     if (CYBSP_LED_STATE_ON == led_cmd)
     {
-        /* Turn ON the LED */
-        #if defined(CY_DEVICE_PSC3)
-        Cy_GPIO_Write(CYBSP_USER_LED1_PORT,CYBSP_USER_LED1_PIN, CYBSP_LED_STATE_ON);
-        #else
-        cyhal_gpio_write(CYBSP_USER_LED, CYBSP_LED_STATE_ON);
-        #endif
+
+        Cy_GPIO_Write(CYBSP_USER_LED_PORT,CYBSP_USER_LED_PIN, CYBSP_LED_STATE_ON);
     }
     if (CYBSP_LED_STATE_OFF == led_cmd)
     {
-        /* Turn OFF the LED */
-        #if defined(CY_DEVICE_PSC3)
-        Cy_GPIO_Write(CYBSP_USER_LED1_PORT,CYBSP_USER_LED1_PIN,CYBSP_LED_STATE_OFF);
-        #else
-        cyhal_gpio_write(CYBSP_USER_LED, CYBSP_LED_STATE_OFF);
-        #endif
+
+        Cy_GPIO_Write(CYBSP_USER_LED_PORT,CYBSP_USER_LED_PIN,CYBSP_LED_STATE_OFF);
+
     }
 }
 

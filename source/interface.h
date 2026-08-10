@@ -57,7 +57,7 @@
 #define SPI_MODE_MASTER  1
 #define SPI_MODE_SLAVE   2
 
-#define SPI_MODE SPI_MODE_MASTER
+#define SPI_MODE SPI_MODE_BOTH
 
 
 #if (SPI_MODE == SPI_MODE_BOTH)
